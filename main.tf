@@ -101,7 +101,7 @@ data "aws_iam_server_certificate" "ss_cert" {
 
 module "alb" {
   source  = "terraform-aws-modules/alb/aws"
-  version = "3.5.0"
+  version = "5.13.0"
 
   load_balancer_name        = "${var.project}-${var.environment}"
   load_balancer_is_internal = "${var.default_load_balancer_is_internal}"
