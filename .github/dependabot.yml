@@ -1,0 +1,17 @@
+version: 2
+updates:
+- package-ecosystem: terraform
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: terraform-aws-modules/alb/aws
+    versions:
+    - 5.10.0
+    - 5.11.0
+    - 5.12.0
+    - 5.13.0
+    - 5.14.0
+    - 5.15.0
+    - 5.16.0
